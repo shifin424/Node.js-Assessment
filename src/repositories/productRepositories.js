@@ -17,7 +17,7 @@ export const createProduct = async (productData) => {
         return savedProduct;
 
     } catch (err) {
-        throw err
+        throw new Error("Failed to create Product")
     }
 }
 
@@ -26,7 +26,7 @@ export const findProductByName = async (productName) => {
         const product = await Product.findOne({ productName });
         return product;
     } catch (err) {
-        throw err
+        throw new Error("Failed to Find Product")
     }
 }
 
@@ -37,7 +37,7 @@ export const findProductById = async (productId) => {
         return product || null;
 
     } catch (err) {
-        throw err
+        throw new Error("Failed to fetch Product using Id")
     }
 }
 
@@ -57,7 +57,7 @@ export const findFilteredProducts = async (page, pageSize, productName, category
 
         return products;
     } catch (err) {
-        throw err
+        throw new Error("Failed to fetch filtered data")
     }
 }
 
@@ -66,6 +66,6 @@ export const deleteProduct = async (productId) => {
         const deletedProduct = await Product.findByIdAndDelete(productId);
         return deletedProduct;
     } catch (err) {
-        throw err
+        throw new Error("Failed to delete the product")
     }
 }
