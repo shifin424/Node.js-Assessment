@@ -2,7 +2,7 @@
 # Technical Assignment - Node.js Developer
 
 
-This repository houses a collection of Node.js APIs crafted to evaluate your Node.js development skills. The assessment tasks cover fundamental aspects such as CRUD operations and efficient data handling. Leverage technologies like MongoDB and Express to showcase the proficiency in building robust Node.js applications.
+This repository houses a collection of Node.js APIs crafted to evaluate the Node.js development skills. The assessment tasks cover fundamental aspects such as CRUD operations and efficient data handling. Leverage technologies like MongoDB and Express to showcase the proficiency in building robust Node.js applications.
 
 **The following tools were utilized for the project:**
 
